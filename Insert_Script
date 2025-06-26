@@ -1,0 +1,52 @@
+-- Insert Trainers 
+INSERT INTO Trainer VALUES 
+(101, 'Alex Johnson', '9988776655', 'Cardio'), 
+(102, 'Emily Brown', '9876543321', 'Strength'), 
+(103, 'Rahul Mehta', '7894561230', 'HIIT'); -- Insert Workout Plans 
+INSERT INTO Workout_Plan VALUES 
+(201, 'Fat Burn Plan', 'High intensity fat burning', '30 Days', 101), 
+(202, 'Muscle Gain', 'Strength and hypertrophy', '45 Days', 102), 
+(203, 'HIIT Routine', 'Short, intense workouts', '21 Days', 103); -- Insert Members (7 total) 
+INSERT INTO Member VALUES 
+(1, 'John Doe', 28, '1997-06-15', '9876543210', 'john@example.com', 'Gold'), 
+(2, 'Jane Smith', 24, '2000-03-22', '9123456789', 'jane@example.com', 'Silver'), 
+(3, 'Raj Patel', 30, '1994-01-10', '9012345678', 'raj@example.com', 'Platinum'), 
+(4, 'Ayesha Khan', 26, '1998-11-05', '8899001122', 'ayesha@example.com', 
+'Gold'), 
+(5, 'Mike Williams', 35, '1989-05-18', '7766554433', 'mike@example.com', 
+'Bronze'), 
+(6, 'Sneha Iyer', 22, '2002-08-30', '9900112233', 'sneha@example.com', 'Silver'), 
+(7, 'Arjun Reddy', 27, '1997-09-14', '7888999000', 'arjun@example.com', 'Gold'); -- Insert Sessions 
+INSERT INTO Session VALUES 
+(301, '2025-04-10', '08:00:00', 1, 101), 
+(302, '2025-04-12', '10:30:00', 2, 102), 
+(303, '2025-04-15', '09:00:00', 3, 103), 
+(304, '2025-04-16', '07:30:00', 4, 101), 
+(305, '2025-04-17', '11:00:00', 5, 102), 
+(306, '2025-04-18', '06:30:00', 6, 103), 
+(307, '2025-04-19', '08:45:00', 7, 101); 
+-- Insert Payments 
+INSERT INTO Payment VALUES 
+(401, 1, 5000.00, 'Paid', '2025-04-01'), 
+(402, 2, 3500.00, 'Pending', '2025-04-05'), 
+(403, 3, 6000.00, 'Paid', '2025-04-02'), 
+(404, 4, 5500.00, 'Paid', '2025-04-06'), 
+(405, 5, 3000.00, 'Pending', '2025-04-07'), 
+(406, 6, 3200.00, 'Paid', '2025-04-08'), 
+(407, 7, 4500.00, 'Paid', '2025-04-09'); -- Insert Follows 
+INSERT INTO Member_Follows_Plan VALUES 
+(1, 201), 
+(2, 202), 
+(3, 203), 
+(4, 201), 
+(5, 202), 
+(6, 203), 
+(7, 201); -- Insert Booking 
+INSERT INTO Member_Books_Session VALUES 
+(1, 301), 
+(2, 302), 
+(3, 303), 
+(4, 304), 
+(5, 305), 
+(6, 306), 
+(7, 307);
